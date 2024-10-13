@@ -3,9 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import MiniMasonry from "minimasonry";
 import "./Masonry.css";
 
-const Masonry = () => {
+const Masonry = ({ episode }) => {
   const masonryDiv = useRef();
-  const [episode, setEpisode] = useState("all");
   const [resources, setResources] = useState([]);
 
   useEffect(() => {
