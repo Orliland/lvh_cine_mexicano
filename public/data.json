@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "lorem ipsum bla bla bla",
+    "type": "image",
+    "thumbnail": "https://alternativatlx.com/wp-content/uploads/2022/07/Clasicas-de-la-Epoca-de-Oro-del-Cine-Mexicano-AlternativaTlx.png",
+    "episode": "1",
+    "time": "10:05",
+    "description": "lorem ipsum bla bla bla"
+  },
+  {
+    "id": "2",
+    "title": "lorem ipsum bla bla bla",
+    "type": "image",
+    "thumbnail": "https://i0.wp.com/www.sinembargo.mx/wp-content/uploads/2018/09/cine-de-oro-mexico.jpg?fit=1100%2C580&quality=80&strip=all&ssl=1",
+    "episode": "2",
+    "time": "10:05",
+    "description": "lorem ipsum bla bla bla"
+  },
+  {
+    "id": "3",
+    "title": "lorem ipsum bla bla bla",
+    "type": "image",
+    "thumbnail": " https://media.vogue.mx/photos/5ec4a8e0f863d188d6f3132b/master/pass/maria-felix-en-una-escena.jpg",
+    "episode": "1",
+    "time": "10:05",
+    "description": "lorem ipsum bla bla bla"
+  },
+  {
+    "id": "4",
+    "title": "lorem ipsum bla bla bla",
+    "type": "image",
+    "thumbnail": "https://i0.wp.com/www.sinembargo.mx/wp-content/uploads/2018/09/cine-de-oro-mexico.jpg?fit=1100%2C580&quality=80&strip=all&ssl=1",
+    "episode": "1",
+    "time": "10:05",
+    "description": "lorem ipsum bla bla bla"
+  }
+]
