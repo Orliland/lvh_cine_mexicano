@@ -1,0 +1,11 @@
+.masonry {
+  position: relative;
+
+  margin-top: 2.4rem;
+}
+
+.masonry__item {
+  position: absolute;
+
+  border-radius: 3rem;
+}
