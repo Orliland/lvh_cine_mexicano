@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-import MiniMasonry from "minimasonry";
+import macy from "macy";
 import "./Masonry.css";
 
 const Masonry = ({ episode }) => {
@@ -18,9 +18,10 @@ const Masonry = ({ episode }) => {
       setResources(data);
     }
 
-    const miniMasonry = new MiniMasonry({
+    const masonry = new macy({
       container: masonryDiv.current,
-      gutter: 24,
+      margin: 24,
+      columns: 3,
     });
   }, [episode]);
 
