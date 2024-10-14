@@ -8,17 +8,14 @@ const Masonry = ({ episode }) => {
   const [resources, setResources] = useState([]);
 
   useEffect(() => {
-    getMovieData();
+    if (resources.length == 0) {
+      getMovieData();
+    }
 
     async function getMovieData() {
       const res = await fetch("/data.json");
       let data = await res.json();
-      if (episode === "all") {
-        setResources(data);
-      } else {
-        data.filter((element) => element.episode == episode);
-        setResources(data);
-      }
+      setResources(data);
     }
 
     const miniMasonry = new MiniMasonry({
@@ -27,9 +24,17 @@ const Masonry = ({ episode }) => {
     });
   }, [episode]);
 
+  const elements = resources.filter((e) => {
+    if (episode == "all") {
+      return e;
+    } else {
+      return episode == e.episode;
+    }
+  });
+
   return (
     <main className="masonry" ref={masonryDiv}>
-      {resources.map((element) => {
+      {elements.map((element) => {
         return (
           <img
             className="masonry__item"

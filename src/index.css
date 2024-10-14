@@ -13,3 +13,7 @@
   --onyx: #343a40ff;
   --eerie-black: #212529ff;
 }
+
+body {
+  margin: 0;
+}
