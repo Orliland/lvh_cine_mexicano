@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./Filter.css";
 
-const Filter = () => {
+const Filter = ({ episode, setEpisode }) => {
   const [showOptions, setShowOptions] = useState(false);
-  const episodes = ["Episodio 1"];
+  const episodes = [1, 2, 3];
 
   return (
     <form onSubmit={(e) => e.preventDefault()} className="filter">
@@ -11,21 +11,24 @@ const Filter = () => {
         className="filter__select"
         onClick={() => setShowOptions(!showOptions)}
       >
-        Episodio 1
+        Episodio {episode}
       </button>
       <ul
         className={`filter__options ${
           !showOptions && "filter__options--hidden"
         }`}
       >
-        {episodes.map((episode, key) => {
+        {episodes.map((e, key) => {
           return (
             <li
               className="filter__option"
               key={key}
-              onClick={() => setShowOptions(!showOptions)}
+              onClick={() => {
+                setShowOptions(!showOptions);
+                setEpisode(e);
+              }}
             >
-              {episode}
+              Episodio {e}
             </li>
           );
         })}
