@@ -1,3 +1,5 @@
+import Filter from "./Filter";
+
 import "./App.css";
 
 function App() {
@@ -13,6 +15,9 @@ function App() {
           llegar a la <strong>Época de Oro del cine mexicano</strong>.
         </p>
       </header>
+      <main>
+        <Filter />
+      </main>
     </>
   );
 }

@@ -8,9 +8,16 @@
   font-family: "Noto Sans Variable", sans-serif;
   font-size: 62.5%;
 
-  --pure-white: #ffffff;
-  --light-gray: #dfdfdf;
-  --pure-black: #000000;
+  /* CSS HEX */
+  --seasalt: #f8f9faff;
+  --antiflash-white: #e9ecefff;
+  --platinum: #dee2e6ff;
+  --french-gray: #ced4daff;
+  --french-gray-2: #adb5bdff;
+  --slate-gray: #6c757dff;
+  --outer-space: #495057ff;
+  --onyx: #343a40ff;
+  --eerie-black: #212529ff;
 
   --font-family: "Noto Sans Variable", sans-serif;
 
@@ -18,4 +25,8 @@
   --heading-mobile: bold 3.2rem var(--font-family);
   --subheading: 200 1.6rem var(--font-family);
   --body: 1.5rem/2.5rem var(--font-family);
+}
+
+body {
+  background-color: var(--seasalt);
 }
