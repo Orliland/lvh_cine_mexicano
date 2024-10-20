@@ -47,12 +47,15 @@
 }
 
 .filter__options {
+  position: absolute;
+  width: calc(100% - 4rem);
   z-index: 2;
   margin-top: 0.5rem;
 
   padding: 0;
   border: 0.2rem solid var(--eerie-black);
   border-radius: 2rem;
+  background-color: var(--seasalt);
 
   overflow: hidden;
   list-style: none;

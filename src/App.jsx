@@ -1,4 +1,5 @@
 import Filter from "./Filter";
+import Gallery from "./Gallery";
 
 import "./App.css";
 import { useState } from "react";
@@ -20,6 +21,7 @@ function App() {
       </header>
       <main>
         <Filter episode={episode} setEpisode={setEpisode} />
+        <Gallery />
       </main>
     </>
   );

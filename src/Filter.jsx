@@ -3,7 +3,7 @@ import "./Filter.css";
 
 const Filter = ({ episode, setEpisode }) => {
   const [showOptions, setShowOptions] = useState(false);
-  const episodes = [1, 2, 3];
+  const episodes = [1];
 
   return (
     <form onSubmit={(e) => e.preventDefault()} className="filter">
