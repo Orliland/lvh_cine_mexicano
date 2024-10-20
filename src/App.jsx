@@ -20,6 +20,7 @@ function App() {
       </header>
       <main>
         <Filter episode={episode} setEpisode={setEpisode} />
+        <section className="gallery"></section>
       </main>
     </>
   );
