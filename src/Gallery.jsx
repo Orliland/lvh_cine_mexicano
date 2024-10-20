@@ -2,11 +2,11 @@ import "./Gallery.css";
 
 const GalleryItem = () => {
   return (
-    <article className="item">
+    <article className="item thumbnail">
       <img
         src="https://cinepremiere.com.mx/wp-content/uploads/2023/09/peliculas-epoca-oro-mexicano-900x506.jpg"
         alt=""
-        className="item__thumnail"
+        className="item__thumbnail"
       />
       <div className="item__body">
         <h2 className="item__title">BEAUTIFUL STORIES EVERY TIME</h2>
