@@ -55,6 +55,7 @@
   padding: 0;
   border: 0.2rem solid var(--eerie-black);
   border-radius: 2rem;
+  background-color: var(--seasalt);
 
   overflow: hidden;
   list-style: none;
