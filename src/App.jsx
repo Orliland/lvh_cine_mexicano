@@ -1,8 +1,11 @@
 import Filter from "./Filter";
 
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [episode, setEpisode] = useState(1);
+
   return (
     <>
       <header className="hero">
@@ -16,7 +19,7 @@ function App() {
         </p>
       </header>
       <main>
-        <Filter />
+        <Filter episode={episode} setEpisode={setEpisode} />
       </main>
     </>
   );
