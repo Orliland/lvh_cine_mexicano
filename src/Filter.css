@@ -47,6 +47,8 @@
 }
 
 .filter__options {
+  position: absolute;
+  width: calc(100% - 4rem);
   z-index: 2;
   margin-top: 0.5rem;
 
