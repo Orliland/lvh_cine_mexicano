@@ -14,16 +14,8 @@
 
   --font-family: "Noto Sans Variable", sans-serif;
 
-  --heading-1: bold 4rem/4.8rem var(--font-family);
-  --heading-2: bold 2.4rem/2.5rem var(--font-family);
-  --heading-3: bold 1.8rem/2.5rem var(--font-family);
-  --heading-4: bold 1.2rem/1.6rem var(--font-family);
+  --heading: bold 4.8rem var(--font-family);
+  --heading-mobile: bold 3.2rem var(--font-family);
+  --subheading: 200 1.6rem var(--font-family);
   --body: 1.5rem/2.5rem var(--font-family);
-
-  --ls-1: 0.417rem;
-  --ls-2: 0;
-  --ls-3: 0.2rem;
-
-  font: var(--body);
-  letter-spacing: var(--ls-2);
 }
