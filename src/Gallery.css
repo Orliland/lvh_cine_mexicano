@@ -130,9 +130,9 @@
     justify-self: end;
   }
   .item__title {
-    width: 60%;
+    width: 80%;
   }
   .item__description {
-    max-width: 60%;
+    max-width: 80%;
   }
 }

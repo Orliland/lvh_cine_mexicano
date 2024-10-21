@@ -1,11 +1,14 @@
 import Filter from "./Filter";
 import Gallery from "./Gallery";
+import getItems from "./db";
 
 import "./App.css";
 import { useState } from "react";
 
 function App() {
   const [episode, setEpisode] = useState(1);
+
+  const items = getItems(episode);
 
   return (
     <>
@@ -21,7 +24,7 @@ function App() {
       </header>
       <main>
         <Filter episode={episode} setEpisode={setEpisode} />
-        <Gallery />
+        <Gallery items={items} />
       </main>
     </>
   );
