@@ -24,7 +24,7 @@ function App() {
       </header>
       <main>
         <Filter episode={episode} setEpisode={setEpisode} />
-        <Gallery items={items} />
+        <Gallery episode={episode} items={items} />
       </main>
     </>
   );

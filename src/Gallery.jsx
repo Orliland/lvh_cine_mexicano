@@ -30,12 +30,19 @@ const GalleryItem = ({ item, index }) => {
   );
 };
 
-const Gallery = ({ items }) => {
+const Gallery = ({ items, episode }) => {
   return (
     <section className="gallery">
-      {items.map((item, index) => {
-        return <GalleryItem item={item} key={index} />;
-      })}
+      {items.lenght > 0 ? (
+        items.map((item, index) => {
+          return <GalleryItem item={item} key={index} />;
+        })
+      ) : (
+        <div className="gallery__legend">
+          Por el momento no hay información registrada del episodio {episode}.{" "}
+          <strong>Vuelve pronto, estamos trabajando en agregarla.</strong>
+        </div>
+      )}
     </section>
   );
 };
