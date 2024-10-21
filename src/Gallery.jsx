@@ -15,7 +15,7 @@ const GalleryItem = ({ item, index }) => {
         ></lite-youtube>
       ) : (
         <img
-          src={item.source}
+          src={`https://res.cloudinary.com/dywakwunm/image/upload/${item.source}`}
           alt={item.title}
           loading="lazy"
           className="item__thumbnail"
@@ -33,7 +33,7 @@ const GalleryItem = ({ item, index }) => {
 const Gallery = ({ items, episode }) => {
   return (
     <section className="gallery">
-      {items.lenght > 0 ? (
+      {items.length > 0 ? (
         items.map((item, index) => {
           return <GalleryItem item={item} key={index} />;
         })
