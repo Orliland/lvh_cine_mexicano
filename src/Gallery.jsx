@@ -35,7 +35,7 @@ const Gallery = ({ items, episode }) => {
     <section className="gallery">
       {items.length > 0 ? (
         items.map((item, index) => {
-          return <GalleryItem item={item} key={index} />;
+          return <GalleryItem item={item} key={index} index={index} />;
         })
       ) : (
         <div className="gallery__legend">
