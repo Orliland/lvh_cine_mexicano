@@ -130,9 +130,24 @@
     justify-self: end;
   }
   .item__title {
-    width: 60%;
+    width: 80%;
   }
   .item__description {
-    max-width: 60%;
+    max-width: 80%;
   }
+}
+
+.gallery__legend {
+  background-color: var(--antiflash-white);
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.gallery__legend strong {
+  font-weight: 400;
 }
