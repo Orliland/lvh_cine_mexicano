@@ -1,9 +1,9 @@
 import "./Gallery.css";
 
-const GalleryItem = ({ type }) => {
+const GalleryItem = ({ type, id }) => {
   return (
     <article
-      className={`item ${Math.random() > 0.5 ? "thumbnail" : "body"} ${
+      className={`item ${id % 2 === 0 ? "thumbnail" : "body"} ${
         type == "video" && "item--video"
       }`}
     >
@@ -36,13 +36,14 @@ const GalleryItem = ({ type }) => {
 const Gallery = () => {
   return (
     <section className="gallery">
-      <GalleryItem type="video" />
-      <GalleryItem type="image" />
-      <GalleryItem type="image" />
-      <GalleryItem type="image" />
-      <GalleryItem type="video" />
-      <GalleryItem type="image" />
-      <GalleryItem type="image" />
+      {/* TODO: replace key by item id */}
+      <GalleryItem type="video" id={1} />
+      <GalleryItem type="image" id={2} />
+      <GalleryItem type="image" id={3} />
+      <GalleryItem type="image" id={4} />
+      <GalleryItem type="video" id={5} />
+      <GalleryItem type="image" id={6} />
+      <GalleryItem type="image" id={7} />
     </section>
   );
 };
